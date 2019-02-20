@@ -37,6 +37,7 @@ if (isset($_POST['barnabe'])) {
 
         $_SESSION['nom'] = $result['USENOM'];
         $_SESSION['prenom'] = $result['USEPRENOM'];
+        $_SESSION['mail'] = $result['USEMAIL'];
         $hash = $result['USEPASSWORD'];
 
 

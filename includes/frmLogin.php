@@ -1,7 +1,7 @@
 <?php
 if (!isset($mail)) $mail = "";
 ?>
-<form method="post" action="index.php?page=login">
+<form method="post" action="http://localhost/RFD-PHP1/index.php?page=login">
     <div>
         <label for="mail">Mail&nbsp;: </label>
         <input type="text" id="mail" name="mail" value="<?=$mail?>" />

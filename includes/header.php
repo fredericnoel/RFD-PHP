@@ -13,6 +13,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
 
         <body>
         <div class="jumbotron">
+            <div class="container">
         <header>
             <?php
                 if(isset($bonjour)) {
