@@ -42,7 +42,7 @@ if (isset($_POST['barnabe'])) {
 
        if (password_verify($mdp, $hash)) {
             $_SESSION['login'] = 1;
-            $redirection = "<script>document.location.href='http://localhost/PHP1/'</script>";
+            $redirection = "<script>document.location.href='http://localhost/RFD-PHP1/'</script>";
             echo $redirection;
         }
 
