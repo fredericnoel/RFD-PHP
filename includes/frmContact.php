@@ -5,26 +5,41 @@ if (!isset($prenom)) $prenom = "";
 if (!isset($mail)) $mail = "";
 ?>
 
-<form method="post" action="index.php?page=inscription">
-    <div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+<form method="post" action="index.php?page=contact">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+
         <label for="nom">Nom&nbsp;: </label>
-        <input type="text" id="nom" name="nom" value="<?=$nom?>" />
+        <input type="text" class="form-control" id="nom" name="nom" required="required" value="<?=$nom?>" />
     </div>
-    <div>
+    <div class="form-group">
         <label for="prenom">Prénom&nbsp;: </label>
-        <input type="text" id="prenom" name="prenom" value="<?=$prenom?>" />
+        <input type="text" class="form-control id="prenom" name="prenom" required="required" value="<?=$prenom?>" />
     </div>
-    <div>
+    <div class="form-group">
         <label for="mail">Mail&nbsp;: </label>
-        <input type="text" id="mail" name="mail" value="<?=$mail?>" />
+        <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+        <input type="text" class="form-control id="mail" name="mail" required="required" value="<?=$mail?>" />
+        </div></div></div>
+    <div class="form-group">
+        <label for="texte">Votre message&nbsp;: </label>
+        <textarea id="texte" class="form-control" name="texte" rows="9" cols="45" require placeholder="Message" value="<?=$texte?>"/></textarea>
     </div>
-    <div>
-        <label for="message">Votre message&nbsp;: </label>
-        <textarea id="message" name="message" /></textarea>
-    </div>
-    <div>
-        <input type="reset" value="Effacer" />
-        <input type="submit" value="Envoyer" />
+    <div class="col-md-12">
+        <input class="btn btn-primary pull-right" type="reset" value="Effacer" />
+        <input class="btn btn-primary pull-right" type="submit" value="Envoyer" />
     </div>
     <input type="hidden" name="maurice" />
+        </div>
+    </div>
 </form>
+            </div>
+        </div>
+    </div>
+</div>
