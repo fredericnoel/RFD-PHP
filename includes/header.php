@@ -11,8 +11,8 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
 }
 ?>
 
-        <body>
-        <div class="jumbotron">
+        <body bgcolor="blue">
+        <div class="">
             <div class="container">
         <header>
             <?php
