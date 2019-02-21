@@ -16,7 +16,14 @@ else {
     <nav>
         <ul>
             <li><a href="index.php?page=accueil">Accueil</a></li>
-            <li><a href="index.php?page=produits">Produits</a></li>
+            <li><a href="index.php?page=produits">Produits</a>
+            <?php
+                if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1)
+                {
+                    echo "<ul><li><a href=\"index.php?page=produitAjouter\">Ajouter un produit</a></li></ul>";
+                }
+            ?>
+            </li>
             <li><a href="index.php?page=inscription">Inscription</a></li>
             <?php
             if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
