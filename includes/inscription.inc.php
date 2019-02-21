@@ -55,7 +55,11 @@ if (isset($_POST['maurice'])) {
             $msg = "Inscription OK";
             $sujet = "Validation de votre inscription";
 
-            if (mail($mail, $sujet, $msg)) {
+            $headers = 'From: manu@elysee.fr' . "\r\n" .
+                'Reply-To: manu@elysee.fr' . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+
+            if (mail($mail, $sujet, $msg, $headers)) {
                 echo "Inscription OK";
             }
 
