@@ -4,7 +4,7 @@ if (!isset($nomProduit)) $nomProduit = "";
 if (!isset($prix)) $prix = "";
 if (!isset($photo)) $photo = "";
 ?>
-<form method="post" action="index.php?page=produitAjouter">
+<form method="post" action="index.php?page=produitAjouter" enctype="multipart/form-data">
     <div>
         <label for="reference">Référence&nbsp;: </label>
         <input type="text" id="reference" name="reference" value="<?=$reference?>" />
