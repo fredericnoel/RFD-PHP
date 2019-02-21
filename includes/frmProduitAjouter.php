@@ -1,5 +1,8 @@
 <?php
-
+if (!isset($reference)) $reference = "";
+if (!isset($nomProduit)) $nomProduit = "";
+if (!isset($prix)) $prix = "";
+if (!isset($photo)) $photo = "";
 ?>
 <form method="post" action="index.php?page=produitAjouter">
     <div>
