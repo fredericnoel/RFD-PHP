@@ -16,6 +16,8 @@ include_once "./functions/debug.php";
 include_once "./includes/pdo.php";
 include_once "./functions/displayTitle.php";
 include_once "./functions/supprAxen.php";
+include_once "./functions/checkExtension.php";
+include_once "./functions/checkMime.php";
 include_once "./includes/html.php";
 include_once "./includes/header.php";
 
