@@ -14,8 +14,9 @@ if (isset($_POST['albator'])) {
 
     if ($errorPhoto == 0) {
         $nomPhoto = supprAxen($nomPhoto);
-        if (checkExtension("image", $nomPhoto))
-            echo "Extension permise";
+        if (checkExtension("image", $nomPhoto) && checkMime("image", $typePhoto))
+            echo "Extension et type MIME Okaye";
+
         else
             echo "Extension verboten";
     }
