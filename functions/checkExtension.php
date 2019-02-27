@@ -5,7 +5,7 @@ function checkExtension(string $type, string $file) : bool {
     $extension = substr(strrchr($file, '.'), 1);
 
     if ($type === "image") {
-        $fileExtension = array("jpeg", "jpg", "png", "bmp", "gif", "tiff", "webp");
+        $fileExtension = array("jpeg", "jpg", "png", "bmp", "gif", "tiff", "webp", "svg");
         return in_array($extension, $fileExtension) ?? false;
     }
 
