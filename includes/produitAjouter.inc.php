@@ -13,7 +13,7 @@ if (isset($_POST['albator'])) {
     $sizePhoto = $_FILES['photo']['size'];
 
     if ($errorPhoto == 0) {
-        $nomPhoto = str_replace(" ", "_", $nomPhoto);
+        $nomPhoto = str_replace(array(" ", "'", "\""), "_", $nomPhoto);
         $nomPhoto = strtr($nomPhoto,
             'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
             'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
